@@ -1,0 +1,153 @@
+* {
+    /* *:meaning including the body */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+/*  Navigation Logo */
+.navbar .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #05ee2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bolder
+}
+
+.navbar .logo:hover {
+    background-color: #457c29;
+    font-size: 23px;
+}
+
+/* Nav Links */
+.links {
+    display: flex;
+    gap: 32px;
+
+}
+
+.links li {
+    list-style-type: none;
+}
+
+.links li>a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.links li>a:hover {
+    border-bottom: 3px solid #457c29;
+}
+
+
+
+/* Search bar */
+.search {
+    background-color: #111;
+    border: none;
+    outline: none;
+    color: wheat;
+    padding: 12px;
+    width: 320px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+
+
+/* Hero Section */
+.container {
+    width: 100vw;
+    background-color: #111;
+    height: calc(100vh - 120px);
+}
+
+/* Background */
+
+.container .imgbg {
+    background-image: url("./Assets/images/bg.png");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .imgbg::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+ /* header and text */
+ .container .text{
+    color: white;
+    z-index: 1;
+ }
+ 
+ .text p{
+    width: 75%;
+    margin: 0 auto;
+    color: bisque;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+ }
+ .text h1{
+    text-align: center;
+    font-size: 69px;
+ }
+
+ /* buttons */
+
+ .btns {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ button {
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    width: 67px;
+    color: #1f1313;
+   background-color: #0aff47;
+   cursor: pointer;
+   z-index: 2;
+   
+
+ }
+
+ .btn2 {
+    background-color: antiquewhite;
+ }
+
+ .btns :hover{
+    background-color: #0e481c;
+ }
+ 
